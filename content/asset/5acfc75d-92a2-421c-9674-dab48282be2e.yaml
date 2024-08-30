@@ -8,7 +8,7 @@ asset:
       value: icon_content_w.svg
     file:
       type: file
-      value: 081e8423-5a52-496c-b59c-213cdab64c65
+      value: da6008a2-ea07-4556-b0a4-18569f6f52e3
     mediaType:
       value: image/svg+xml
       type: text
@@ -17,7 +17,7 @@ asset:
         https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/Ctlp1AMZQgaaoM_shF1UaQ-icon_content_w.svg
       type: text
     size:
-      value: 611
+      value: 624
       type: number
     width:
       value: 165
@@ -26,5 +26,5 @@ asset:
       value: 165
       type: number
     custom: {}
-created: '2024-04-15T10:51:13.647609+00:00'
-modified: '2024-04-15T10:51:13.647609+00:00'
+created: '2024-08-29T15:37:09.115907+00:00'
+modified: '2024-08-30T08:21:25.58461+00:00'

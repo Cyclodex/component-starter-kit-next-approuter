@@ -7,7 +7,6 @@ parameters:
   - id: size
     name: Size
     type: tp-slider-parameter
-    helpText: ''
     typeConfig:
       step: 1
       type: custom
@@ -44,8 +43,8 @@ slots:
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 canBeComposition: false
-created: '2024-04-15T10:51:33.815599+00:00'
-updated: '2024-04-15T10:51:33.815599+00:00'
+created: '2024-08-29T15:37:25.188662+00:00'
+updated: '2024-08-30T08:22:13.991693+00:00'
 variants:
   - id: zebra
     name: Zebra

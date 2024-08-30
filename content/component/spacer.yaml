@@ -7,7 +7,6 @@ parameters:
   - id: thickness
     name: Thickness
     type: tp-slider-parameter
-    helpText: ''
     typeConfig:
       step: 10
       type: steps
@@ -21,8 +20,8 @@ previewImageUrl: >-
 useTeamPermissions: true
 slots: []
 canBeComposition: false
-created: '2024-04-15T10:51:33.51868+00:00'
-updated: '2024-04-15T10:51:33.51868+00:00'
+created: '2024-08-29T15:37:26.063194+00:00'
+updated: '2024-08-30T08:22:12.219284+00:00'
 variants:
   - id: vertical
     name: Vertical

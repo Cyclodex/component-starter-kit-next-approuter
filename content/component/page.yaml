@@ -7,7 +7,6 @@ parameters:
   - id: pageTitle
     name: Page Title
     type: text
-    helpText: ''
     typeConfig:
       required: true
   - id: group_metaData
@@ -20,14 +19,12 @@ parameters:
   - id: pageMetaDescription
     name: Page Meta Description
     type: text
-    helpText: ''
     typeConfig:
       multiline: true
       linesCount: '5'
   - id: pageKeywords
     name: Page Keywords
     type: text
-    helpText: ''
     typeConfig:
       multiline: true
   - id: group_openGraph
@@ -278,5 +275,5 @@ defaults:
             value: true
 titleParameter: pageTitle
 canBeComposition: true
-created: '2024-04-15T10:51:33.386679+00:00'
-updated: '2024-04-15T10:51:33.386679+00:00'
+created: '2024-08-29T15:37:25.516617+00:00'
+updated: '2024-08-30T08:22:12.212018+00:00'

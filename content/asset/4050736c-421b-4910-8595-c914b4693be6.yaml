@@ -8,7 +8,7 @@ asset:
       value: icon_hero_w.svg
     file:
       type: file
-      value: e2740dd2-5f33-4ea1-a5c4-ff59ce87a461
+      value: aa6c974d-c4b5-4c1b-9fb3-65d6c705a706
     mediaType:
       value: image/svg+xml
       type: text
@@ -17,7 +17,7 @@ asset:
         https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/52o6NUL5QxykZvP653J27g-icon_hero_w.svg
       type: text
     size:
-      value: 1693
+      value: 1722
       type: number
     width:
       value: 165
@@ -26,5 +26,5 @@ asset:
       value: 165
       type: number
     custom: {}
-created: '2024-04-15T10:51:12.318821+00:00'
-modified: '2024-04-15T10:51:12.318821+00:00'
+created: '2024-08-29T15:37:08.499446+00:00'
+modified: '2024-08-30T08:21:18.128325+00:00'
