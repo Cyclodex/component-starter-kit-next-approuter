@@ -1,0 +1,28 @@
+id: shopifyRequestSingleProductbyId
+displayName: Shopify request single product (by ID)
+ttl: 30
+path: ''
+custom:
+  proposedName: ''
+method: GET
+headers:
+  - key: X-Shopify-Storefront-Access-Token
+    value: 340e79110db1f7def07630efebfd4540
+  - key: Content-Type
+    value: application/json
+purgeKey: 24e6c7c4-a1e5-4a67-999f-d447be16a2f9
+archetype: default
+variables:
+  ID:
+    type: text
+    default: '9651681755474'
+parameters:
+  - key: query
+    value: >-
+      {  product(id: "gid://shopify/Product/${ID}") {    title    description   
+      images(first: 1) {      edges {        node {          url        }     
+      }    }    variants(first: 100) {      edges {        node {          price
+      {            amount            currencyCode          }        }      }   
+      }  }}
+dataSourceId: fabuUniformCertifiedDevelopermyshopifycom
+allowedOnComponents: []

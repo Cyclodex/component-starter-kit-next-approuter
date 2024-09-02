@@ -1,0 +1,53 @@
+composition:
+  _name: Product pattern
+  _id: 81a4a55e-3794-4fa6-97e0-a40cbe1e0ccd
+  type: product
+  parameters:
+    shopifyProduct:
+      type: shopify-product-search
+      value:
+        entities:
+          - id: '9651681952082'
+  slots:
+    product:
+      - _id: 9cf7ee97-a009-459e-b36d-6f27f23e11e6
+        type: text
+        parameters:
+          tag:
+            type: tp-segmented-control-parameter
+            value: h1
+          size:
+            type: tp-segmented-control-parameter
+            value: ''
+          text:
+            type: text
+            value: >-
+              ${#jptr:/Shopify request single product (by ID)
+              Content/data/product/title}
+          color:
+            type: tp-color-palette-parameter
+            value: accent
+          fontWeight:
+            type: tp-segmented-control-parameter
+            value: normal
+          whiteSpace:
+            type: tp-segmented-control-parameter
+            value: normal
+          letterSpacing:
+            type: tp-segmented-control-parameter
+            value: ''
+        _overridability:
+          hideLockedParameters: true
+  _dataResources:
+    Shopify request single product (by ID) Content:
+      type: shopifyRequestSingleProductbyId
+      variables: {}
+      isPatternParameter: true
+      ignorePatternParameterDefault: false
+  _overridability:
+    parameters:
+      shopifyProduct: 'yes'
+    hideLockedParameters: true
+created: '2024-09-02T14:07:01.493098+00:00'
+modified: '2024-09-02T14:11:10.536524+00:00'
+pattern: true

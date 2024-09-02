@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: teamMember
+name: Team Member
+icon: user
+parameters:
+  - id: name
+    name: Name
+    type: text
+    typeConfig:
+      required: true
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    typeConfig: null
+    localizable: true
+categoryId: c7c7c5c5-2b29-4f77-84b1-6730995a3ed6
+useTeamPermissions: true
+slots: []
+defaults:
+  type: teamMember
+  parameters:
+    name:
+      type: text
+      value: Awesome Person
+    description:
+      type: text
+      value: Developer
+titleParameter: name
+canBeComposition: true
+created: '2024-08-30T08:31:03.671115+00:00'
+updated: '2024-08-30T11:29:34.400192+00:00'

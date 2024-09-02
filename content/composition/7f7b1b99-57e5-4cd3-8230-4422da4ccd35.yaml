@@ -1,0 +1,39 @@
+composition:
+  _name: Products Page
+  _id: 7f7b1b99-57e5-4cd3-8230-4422da4ccd35
+  _slug: products
+  type: product
+  parameters:
+    shopifyProduct:
+      type: shopify-product-search
+      value:
+        entities:
+          - id: '9651681952082'
+          - id: '9651682378066'
+          - id: '9651682148690'
+  slots:
+    product:
+      - _id: db335dfb-fc16-4ebd-890b-e80e37eba518
+        type: text
+        parameters:
+          tag:
+            type: tp-segmented-control-parameter
+            value: p
+          size:
+            type: tp-segmented-control-parameter
+            value: ''
+          text:
+            type: text
+            value: >-
+              ${#jptr:/Shopify request single product
+              Content/data/productByHandle/title}
+          letterSpacing:
+            type: tp-segmented-control-parameter
+            value: ''
+  _dataResources:
+    Shopify request single product Content:
+      type: shopifyRequestSingleProduct
+      variables: {}
+created: '2024-08-30T12:04:53.195943+00:00'
+modified: '2024-09-02T13:46:59.512112+00:00'
+pattern: false

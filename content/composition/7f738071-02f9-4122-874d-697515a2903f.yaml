@@ -1,0 +1,137 @@
+composition:
+  _name: Product Detail Page
+  _id: 7f738071-02f9-4122-874d-697515a2903f
+  _slug: ':handle'
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: >-
+        ${#jptr:/Shopify request single product
+        Content/data/productByHandle/title}
+  slots:
+    pageFooter:
+      - _id: 7bd7014f-50e2-45b8-bec2-c80a651fe5e7
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: af15b0be-ddd1-4638-b9de-5730f203aa4d
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: b32966c0-f8cd-4065-8aef-2689f3a6e318
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: slash
+          colorStyle:
+            type: tp-color-style-parameter
+            value: base-200
+          displayRootNode:
+            type: checkbox
+            value: true
+      - _id: e49be7b8-4c65-4ec4-a98c-4fc31015c43f
+        type: advancedContainer
+        _pattern: ef9f29a8-b972-4326-bf5b-1a00f2fa8e9b
+  _dataResources:
+    Shopify request single product Content:
+      type: shopifyRequestSingleProduct
+      variables:
+        Handle: ${handle}
+  _overrides:
+    e49be7b8-4c65-4ec4-a98c-4fc31015c43f:
+      parameters:
+        marginTop:
+          type: select
+          value: None
+        marginBottom:
+          type: select
+          value: Small
+        backgroundColor:
+          type: tp-color-palette-parameter
+          value: primary-content
+    e49be7b8-4c65-4ec4-a98c-4fc31015c43f|37dbaca4-fb95-4515-9a88-d2feb1c5765c:
+      parameters:
+        text:
+          type: text
+          value: >-
+            ${#jptr:/Shopify request single product
+            Content/data/productByHandle/title}
+    e49be7b8-4c65-4ec4-a98c-4fc31015c43f|be22eaa2-0697-4bd4-a193-0945fcf580c4:
+      parameters:
+        src:
+          type: asset
+          value:
+            - _id: c8a30dc6-fced-4967-aa14-30256bba88dd
+              type: image
+              fields:
+                url:
+                  type: text
+                  value: >-
+                    ${#jptr:/Shopify request single product
+                    Content/data/productByHandle/images/edges/0/node/url}
+              _source: custom-url
+        url:
+          type: image
+          value: null
+        fill:
+          type: checkbox
+          value: true
+        height:
+          type: number
+          value: null
+        objectFit:
+          type: select
+          value: contain
+        borderColor:
+          type: tp-color-style-parameter
+          value: base-300
+        borderWidth:
+          type: tp-slider-parameter
+          value: 2px
+        borderRadius:
+          type: tp-slider-parameter
+          value: large
+        overlayColor:
+          type: tp-color-style-parameter
+          value: base-300
+        overlayOpacity:
+          type: tp-slider-parameter
+          value: 60%
+    e49be7b8-4c65-4ec4-a98c-4fc31015c43f|c7f7f636-8657-41dd-bb79-200abc72c534:
+      parameters:
+        copy:
+          type: text
+          value: or go back to the overview
+        link:
+          type: link
+          value:
+            path: /products
+            type: projectMapNode
+            nodeId: 3e2b8504-7b02-468f-bafe-d9a8d9418343
+            projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+    e49be7b8-4c65-4ec4-a98c-4fc31015c43f|c82aafb6-c5ea-4aec-8481-1dde80e3eca4:
+      parameters:
+        copy:
+          type: text
+          value: >-
+            Buy now for ${#jptr:/Shopify request single product
+            Content/data/productByHandle/variants/edges/0/node/price/amount}
+            ${#jptr:/Shopify request single product
+            Content/data/productByHandle/variants/edges/0/node/price/currencyCode}
+    e49be7b8-4c65-4ec4-a98c-4fc31015c43f|ea499a44-cff9-4208-981c-a1ed4fb9e7be:
+      parameters:
+        text:
+          type: text
+          value: >-
+            ${#jptr:/Shopify request single product
+            Content/data/productByHandle/description}
+    e49be7b8-4c65-4ec4-a98c-4fc31015c43f|ea89db6a-f014-4816-970c-0075d8d10a50:
+      parameters:
+        text:
+          type: text
+          value: Product page
+created: '2024-08-30T16:09:23.399094+00:00'
+modified: '2024-09-02T13:01:49.575974+00:00'
+pattern: false

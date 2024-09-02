@@ -1,0 +1,7 @@
+id: pirates
+name: pirates
+description: Audience likes pirates
+type: 0
+inputs:
+  - dim: likesPirates
+    sign: +

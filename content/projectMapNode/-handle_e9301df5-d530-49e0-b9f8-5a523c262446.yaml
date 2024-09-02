@@ -1,0 +1,10 @@
+id: e9301df5-d530-49e0-b9f8-5a523c262446
+name: Product Detail Page
+order: 500
+path: /products/:handle
+type: composition
+pathSegment: ':handle'
+data:
+  previewValue: the-3p-fulfilled-snowboard
+compositionId: 7f738071-02f9-4122-874d-697515a2903f
+projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431

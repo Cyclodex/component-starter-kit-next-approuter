@@ -1,0 +1,28 @@
+id: shopifyProduct
+name: Shopify Product
+created: '2024-08-30T12:15:38.540814+00:00'
+updated: '2024-08-30T12:15:38.540814+00:00'
+slugSettings: {}
+useTeamPermissions: true
+fields:
+  - id: title
+    name: Title
+    type: text
+    typeConfig:
+      required: true
+    localizable: true
+  - id: price
+    name: Price
+    type: text
+    typeConfig:
+      required: true
+    localizable: true
+  - id: image
+    name: Image
+    type: image
+    typeConfig: null
+entryName: title
+description: ''
+icon: shape-rhombus
+type: contentType
+permissions: []

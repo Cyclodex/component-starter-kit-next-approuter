@@ -1,6 +1,15 @@
 {
   "project": {
     "pz": {
+      "agg": {
+        "pirates": {
+          "inputs": [
+            {
+              "dim": "likesPirates"
+            }
+          ]
+        }
+      },
       "sig": {
         "launch": {
           "str": 50,
@@ -18,6 +27,35 @@
                   "rhs": "launch"
                 },
                 "queryName": "utm_campaign"
+              }
+            ]
+          }
+        },
+        "likesPirates": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "|",
+            "type": "G",
+            "clauses": [
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "1"
+                },
+                "queryName": "pirate"
+              },
+              {
+                "type": "QS",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "1"
+                },
+                "queryName": "pirates"
               }
             ]
           }

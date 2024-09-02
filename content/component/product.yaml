@@ -1,0 +1,28 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: product
+name: Product
+icon: bulb
+parameters:
+  - id: shopifyProduct
+    name: Shopify Products
+    type: shopify-product-search
+    typeConfig:
+      required: true
+      multiSelect: true
+      allowedContentTypes:
+        snowboard:
+          id: snowboard
+          name: snowboard
+useTeamPermissions: true
+slots:
+  - id: product
+    name: product
+    minComponents: 1
+    allowedComponents: []
+    allowAllComponents: true
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: true
+created: '2024-08-30T12:03:30.538425+00:00'
+updated: '2024-09-02T13:18:49.307979+00:00'

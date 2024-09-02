@@ -1,0 +1,17 @@
+id: shopifyRequestedProducts
+displayName: Shopify requested products
+ttl: 30
+body: ''
+path: ''
+custom:
+  proposedName: ''
+method: GET
+headers:
+  - key: X-Shopify-Storefront-Access-Token
+    value: 340e79110db1f7def07630efebfd4540
+  - key: Content-Type
+    value: application/json
+purgeKey: 24e6c7c4-a1e5-4a67-999f-d447be16a2f9
+archetype: default
+dataSourceId: fabuUniformCertifiedDevelopermyshopifycom
+allowedOnComponents: []
