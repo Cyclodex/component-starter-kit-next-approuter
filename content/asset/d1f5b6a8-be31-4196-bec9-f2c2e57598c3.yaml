@@ -8,7 +8,7 @@ asset:
       value: container-volume-svgrepo-com.svg
     file:
       type: file
-      value: af7b0d30-0578-428f-9ebe-084b105f2bb8
+      value: b9fadc47-9837-4c1e-9a26-a6166b0f5d1c
     mediaType:
       value: image/svg+xml
       type: text
@@ -17,7 +17,7 @@ asset:
         https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/YhswvGx1SzKKcxMMtFkU-Q-container-volume-svgrepo-com.svg
       type: text
     size:
-      value: 1598
+      value: 1603
       type: number
     width:
       value: 800
@@ -26,5 +26,5 @@ asset:
       value: 800
       type: number
     custom: {}
-created: '2024-04-15T10:51:15.248517+00:00'
-modified: '2024-04-15T10:51:15.248517+00:00'
+created: '2024-08-29T15:37:11.830239+00:00'
+modified: '2024-08-30T08:21:51.853039+00:00'

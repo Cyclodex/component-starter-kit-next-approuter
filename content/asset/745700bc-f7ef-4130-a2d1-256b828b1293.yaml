@@ -8,7 +8,7 @@ asset:
       value: uniform_logo_black.svg
     file:
       type: file
-      value: 0f4cd8f4-3207-490b-973f-5f3797d67530
+      value: 96f6b262-74d1-4f8d-b797-8dc323079d11
     mediaType:
       value: image/svg+xml
       type: text
@@ -17,7 +17,7 @@ asset:
         https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/zxKTEm8qTRag0p-Rycm68g-uniform_logo_black.svg
       type: text
     size:
-      value: 2288
+      value: 2324
       type: number
     width:
       value: 608
@@ -26,5 +26,5 @@ asset:
       value: 192
       type: number
     custom: {}
-created: '2024-04-15T10:51:13.757139+00:00'
-modified: '2024-04-15T10:51:13.757139+00:00'
+created: '2024-08-29T15:37:10.391633+00:00'
+modified: '2024-08-30T08:21:31.586596+00:00'

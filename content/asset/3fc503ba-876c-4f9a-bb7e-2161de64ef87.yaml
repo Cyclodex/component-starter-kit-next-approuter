@@ -8,7 +8,7 @@ asset:
       value: github_icon_black.svg
     file:
       type: file
-      value: b5e06963-328b-418c-b692-6c5b282d1899
+      value: d774fc4f-5ffb-4c45-9e01-7216d7bc1579
     mediaType:
       value: image/svg+xml
       type: text
@@ -17,7 +17,7 @@ asset:
         https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/661uvaP9TXypadM2_KgTOg-github_icon_black.svg
       type: text
     size:
-      value: 1327
+      value: 1330
       type: number
     width:
       value: 35
@@ -26,5 +26,5 @@ asset:
       value: 34
       type: number
     custom: {}
-created: '2024-04-15T10:51:12.356566+00:00'
-modified: '2024-04-15T10:51:12.356566+00:00'
+created: '2024-08-29T15:37:07.355876+00:00'
+modified: '2024-08-30T08:21:17.095792+00:00'

@@ -1,0 +1,106 @@
+composition:
+  _name: Team
+  _id: 03f25c95-c05f-4228-87d7-46a4c386287c
+  _slug: team
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: Our Team
+  slots:
+    pageFooter:
+      - _id: ecd55cab-6202-42dc-b77e-13dbdefe7a4a
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: 93f11fc4-ba1e-4d69-8011-58d02edb09a0
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: 54e626eb-b8a5-4f15-b470-3b2c55cb7ca0
+        type: hero
+        variant: backgroundImage
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: 749a0108-de12-493f-a28d-f9a77e854d30
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: 3c1767ca-1851-4f4f-b8dc-4269d5ea6328
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/sfeK6SEaQQiym24NCKlHZg/tSRyyYM1QHCzN-lbSkdwBw-rectangle.webp
+                    type: text
+                  file:
+                    type: file
+                    value: 417f72e5-d0bc-47c8-8633-eb537728e2ec
+                  size:
+                    value: 49092
+                    type: number
+                  title:
+                    type: text
+                    value: rectangle.webp
+                  width:
+                    value: 1600
+                    type: number
+                  height:
+                    value: 689
+                    type: number
+                  mediaType:
+                    value: image/webp
+                    type: text
+                _source: uniform-assets
+          title:
+            type: text
+            value: Soulcode
+          objectFit:
+            type: select
+            value: cover
+          textColor:
+            type: tp-color-palette-parameter
+            value: primary-content
+          paddingTop:
+            type: select
+            value: None
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h1
+          description:
+            type: text
+            value: Info page about the soulcode company
+          eyebrowText:
+            type: text
+            value: About
+          paddingBottom:
+            type: select
+            value: None
+          containerVariant:
+            type: select
+            value: fluidContent
+      - _id: 3c3bac64-802c-4efa-8a92-941cfb50a42c
+        type: team
+        parameters:
+          title:
+            type: text
+            value: Our Team
+          subtitle:
+            type: text
+            value: Don't hesitate to contact us!
+      - _id: b21013de-3a7d-408a-94df-15f520eabc7d
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+created: '2024-08-30T08:23:55.31385+00:00'
+modified: '2024-08-30T08:25:25.655827+00:00'
+pattern: false

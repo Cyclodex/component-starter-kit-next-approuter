@@ -8,7 +8,7 @@ asset:
       value: icon_drive.svg
     file:
       type: file
-      value: c390314d-fe90-4f25-8a04-b04cb72f5d13
+      value: b09cb995-8e46-4c80-a5d5-662c1f47b713
     mediaType:
       value: image/svg+xml
       type: text
@@ -17,7 +17,7 @@ asset:
         https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/icXv_dQGRL6Tbk_KdcIoSg-icon_drive.svg
       type: text
     size:
-      value: 1669
+      value: 1677
       type: number
     width:
       value: 58
@@ -26,5 +26,5 @@ asset:
       value: 44
       type: number
     custom: {}
-created: '2024-04-15T10:51:14.277013+00:00'
-modified: '2024-04-15T10:51:14.277013+00:00'
+created: '2024-08-29T15:37:09.480874+00:00'
+modified: '2024-08-30T08:21:40.378174+00:00'

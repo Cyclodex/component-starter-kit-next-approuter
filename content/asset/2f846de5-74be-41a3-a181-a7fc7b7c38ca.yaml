@@ -8,7 +8,7 @@ asset:
       value: clock.svg
     file:
       type: file
-      value: a715aceb-5422-4a96-84a0-e4988fe492e6
+      value: db7faa31-0681-4b23-b6d0-46091f3f3323
     mediaType:
       value: image/svg+xml
       type: text
@@ -17,7 +17,7 @@ asset:
         https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/DMos-2sYRNGgfftyaqCtMw-clock.svg
       type: text
     size:
-      value: 414
+      value: 418
       type: number
     width:
       value: 24
@@ -26,5 +26,5 @@ asset:
       value: 24
       type: number
     custom: {}
-created: '2024-04-15T10:51:12.282644+00:00'
-modified: '2024-04-15T10:51:12.282644+00:00'
+created: '2024-08-29T15:37:06.059119+00:00'
+modified: '2024-08-30T08:21:11.754786+00:00'

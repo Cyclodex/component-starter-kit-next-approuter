@@ -13,17 +13,14 @@ parameters:
   - id: colorStyle
     name: Color Style
     type: tp-color-style-parameter
-    helpText: ''
     typeConfig: null
   - id: displayRootNode
     name: Display Root Node
     type: checkbox
-    helpText: ''
     typeConfig: null
   - id: displayPlaceholderNodes
     name: Display Placeholder Nodes
     type: checkbox
-    helpText: ''
     typeConfig: null
   - id: separator
     name: Separator
@@ -43,5 +40,5 @@ previewImageUrl: >-
 useTeamPermissions: true
 slots: []
 canBeComposition: false
-created: '2024-04-15T10:51:31.729004+00:00'
-updated: '2024-04-15T10:51:31.729004+00:00'
+created: '2024-08-29T15:37:22.735917+00:00'
+updated: '2024-08-30T08:22:09.843273+00:00'

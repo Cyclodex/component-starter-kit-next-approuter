@@ -8,7 +8,7 @@ asset:
       value: next.svg
     file:
       type: file
-      value: 0afc28a6-244f-4884-9a47-17abc63fab2a
+      value: c7042b6b-f1e7-4fce-88e0-401b5bfb966d
     mediaType:
       value: image/svg+xml
       type: text
@@ -17,7 +17,7 @@ asset:
         https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/YPhZetQkTsaW3rRl-7hvcA-next.svg
       type: text
     size:
-      value: 327
+      value: 331
       type: number
     width:
       value: 24
@@ -26,5 +26,5 @@ asset:
       value: 24
       type: number
     custom: {}
-created: '2024-04-15T10:51:13.871077+00:00'
-modified: '2024-04-15T10:51:13.871077+00:00'
+created: '2024-08-29T15:37:09.268173+00:00'
+modified: '2024-08-30T08:21:32.696447+00:00'

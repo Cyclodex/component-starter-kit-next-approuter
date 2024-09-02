@@ -33,14 +33,16 @@ const Button: FC<ButtonProps> = ({ href, copy, style, className, onClick, disabl
     </>
   );
 
-  return href ? (
+  return copy && href ? (
     <Link role="button" href={href} target={href.startsWith('http') ? '_blank' : '_self'} className={buttonStyle}>
       {buttonContent()}
     </Link>
   ) : (
-    <button onClick={onClick} className={buttonStyle}>
-      {buttonContent()}
-    </button>
+    copy && (
+      <button onClick={onClick} className={buttonStyle}>
+        {buttonContent()}
+      </button>
+    )
   );
 };
 
