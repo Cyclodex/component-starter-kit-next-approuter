@@ -1,6 +1,6 @@
 import { ProductProps } from '.';
 
-function Product({ context, component, shopifyProducts }: ProductProps) {
+function Product({ shopifyProducts }: ProductProps) {
   return (
     <div className="flex flex-col justify-center items-center">
       <h1>Shopify products</h1>
