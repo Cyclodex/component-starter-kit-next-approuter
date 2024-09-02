@@ -1,0 +1,338 @@
+composition:
+  _name: 'Page: Shopify Products'
+  _id: 989a28ff-82a7-4a20-a021-678ef57261c5
+  _slug: products
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: Shopify Products Page
+  slots:
+    pageFooter:
+      - _id: 944631b2-7a84-47e8-9b7f-b3fcdbad6f98
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: 87099e93-403d-466f-a732-8511d46d8ebe
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: dd8f96cc-d912-48b2-a624-0eb403581643
+        type: hero
+        variant: backgroundImage
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: 749a0108-de12-493f-a28d-f9a77e854d30
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: 3c1767ca-1851-4f4f-b8dc-4269d5ea6328
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/sfeK6SEaQQiym24NCKlHZg/tSRyyYM1QHCzN-lbSkdwBw-rectangle.webp
+                    type: text
+                  file:
+                    type: file
+                    value: 417f72e5-d0bc-47c8-8633-eb537728e2ec
+                  size:
+                    value: 49092
+                    type: number
+                  title:
+                    type: text
+                    value: rectangle.webp
+                  width:
+                    value: 1600
+                    type: number
+                  height:
+                    value: 689
+                    type: number
+                  mediaType:
+                    value: image/webp
+                    type: text
+                _source: uniform-assets
+          title:
+            type: text
+            value: Shopify Products
+          objectFit:
+            type: select
+            value: cover
+          textColor:
+            type: tp-color-palette-parameter
+            value: primary-content
+          paddingTop:
+            type: select
+            value: None
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h1
+          description:
+            type: text
+            value: Looping over a data from a shopify http request
+          eyebrowText:
+            type: text
+            value: eyebrow text
+          paddingBottom:
+            type: select
+            value: None
+          containerVariant:
+            type: select
+            value: fluidContent
+      - _id: 171bef1c-2428-428e-bef4-ebc1b499858c
+        type: product
+        slots:
+          product:
+            - _id: 39aa590e-71c1-4a59-a16b-d2ac53b490e2
+              type: image
+              parameters:
+                alt:
+                  type: text
+                  value: Product Showcase Image
+                src:
+                  type: asset
+                  value:
+                    - _id: 5e430e5a-79ce-43c9-890a-e0f552067bd6
+                      type: image
+                      fields:
+                        url:
+                          type: text
+                          value: >-
+                            ${#jptr:/Shopify request single product (by ID)
+                            Content/data/product/images/edges/0/node/url}
+                      _source: custom-url
+                width:
+                  type: number
+                  value: '100'
+                height:
+                  type: number
+                  value: '100'
+                objectFit:
+                  type: select
+                  value: contain
+                borderRadius:
+                  type: tp-slider-parameter
+                  value: none
+            - _id: bc36bde7-7c8b-4d1c-a380-c27fd9acd598
+              type: text
+              parameters:
+                text:
+                  type: text
+                  value: >-
+                    ${#jptr:/Shopify requested products
+                    Content/data/products/edges/0/node/title}
+        parameters:
+          shopifyProduct:
+            type: shopify-product-search
+            value:
+              entities:
+                - id: '9651681984850'
+      - _id: 91c37592-ea28-41f6-aac4-41f10d679177
+        type: grid
+        slots:
+          grid-inner:
+            - _id: 580d3d25-1263-4b2f-b153-f5bd00d67d96
+              type: $loop
+              slots:
+                body:
+                  - _id: fe1e4cef-545d-49ff-824e-4be111922d71
+                    type: container
+                    slots:
+                      container-inner:
+                        - _id: 73796416-73ba-4f2c-a31d-02d14832608b
+                          type: image
+                          parameters:
+                            src:
+                              type: asset
+                              value:
+                                - _id: db9572f9-ff50-4362-8a8e-06645ab984ee
+                                  type: image
+                                  fields:
+                                    url:
+                                      type: text
+                                      value: >-
+                                        ${#jptr:/shopifyProduct/node/images/edges/0/node/url}
+                                  _source: custom-url
+                            height:
+                              type: number
+                              value: '50'
+                            objectFit:
+                              type: select
+                              value: contain
+                            borderRadius:
+                              type: tp-slider-parameter
+                              value: none
+                        - _id: b5842285-e880-4189-91ce-f1583e3fb726
+                          type: card
+                          parameters:
+                            badge:
+                              type: text
+                              value: >-
+                                ${#jptr:/shopifyProduct/node/variants/edges/0/node/price/amount}
+                                ${#jptr:/shopifyProduct/node/variants/edges/0/node/price/currencyCode}
+                            title:
+                              type: text
+                              value: ${#jptr:/shopifyProduct/node/title}
+                            objectFit:
+                              type: select
+                              value: none
+                            badgeStyle:
+                              type: tp-badge-style-parameter
+                              value: accent
+                            buttonCopy:
+                              type: text
+                              value: details
+                            buttonLink:
+                              type: link
+                              value:
+                                path: /products/${#jptr:/shopifyProduct/node/handle}
+                                type: projectMapNode
+                                nodeId: e9301df5-d530-49e0-b9f8-5a523c262446
+                                projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                                dynamicInputValues:
+                                  handle: ${#jptr:/shopifyProduct/node/handle}
+                            description:
+                              type: text
+                              value: ${#jptr:/shopifyProduct/node/description}
+                            overlayColor:
+                              type: tp-color-style-parameter
+                              value: base-200
+                            overlayOpacity:
+                              type: tp-slider-parameter
+                              value: 0%
+                            textColorVariant:
+                              type: select
+                              value: Dark
+                            lineCountRestriction:
+                              type: tp-slider-parameter
+                              value: '6'
+                    parameters:
+                      backgroundType:
+                        type: tp-background-type-parameter
+                        value: Medium
+              _dataResources:
+                shopifyProduct:
+                  type: sys-reserved-loop
+                  variables:
+                    connectedData: >-
+                      #jptr:/Shopify requested products
+                      Content/data/products/edges:fa=c
+        parameters:
+          gapX:
+            type: tp-slider-parameter
+            value: small
+          gapY:
+            type: tp-slider-parameter
+            value: small
+          title:
+            type: text
+            value: List of products
+          columnsCount:
+            type: tp-slider-parameter
+            value: '3'
+          backgroundType:
+            type: tp-background-type-parameter
+            value: Medium
+      - _id: b0c066d1-0648-44ae-92b6-a60320470b01
+        type: divider
+        parameters:
+          width:
+            type: tp-slider-parameter
+            value: 100%
+          alignment:
+            type: tp-horizontal-align-parameter
+            value: left
+          thickness:
+            type: tp-slider-parameter
+            value: 10px
+          colorStyle:
+            type: tp-color-style-parameter
+            value: base-200
+      - _id: 2f3887fa-0f18-473e-b88c-6ff90f15fad5
+        type: $loop
+        slots:
+          body:
+            - _id: ae799789-92fd-4474-a2df-89aa35247e44
+              type: advancedContainer
+              _pattern: 283447b2-9b21-45ee-8336-8cf0e99b49b4
+              _dataResources:
+                Shopify requested products Content:
+                  type: shopifyRequestedProducts
+        _dataResources:
+          shopifyProduct:
+            type: sys-reserved-loop
+            variables:
+              connectedData: >-
+                #jptr:/Shopify requested products
+                Content/data/products/edges:fa=c
+      - _id: 98c3ebee-ce0c-461b-9c6a-c2bbb9d2dfa0
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+  _dataResources:
+    Shopify requested products Content:
+      type: shopifyRequestedProducts
+      variables: {}
+    Shopify request single product (by ID) Content:
+      type: shopifyRequestSingleProductbyId
+      variables: {}
+  _overrides:
+    ae799789-92fd-4474-a2df-89aa35247e44|251febba-88ca-43b3-a95a-7fe8f222714a:
+      parameters:
+        copy:
+          type: text
+          value: >-
+            ${#jptr:/shopifyProduct/node/variants/edges/0/node/price/amount} 
+            ${#jptr:/shopifyProduct/node/variants/edges/0/node/price/currencyCode}
+    ae799789-92fd-4474-a2df-89aa35247e44|42e2ea1d-ea67-40d0-8356-175f71d6075f:
+      parameters:
+        text:
+          type: text
+          value: 'Ordere this NOW:'
+    ae799789-92fd-4474-a2df-89aa35247e44|5e5cd078-091b-4527-93cd-28cb64207f9a:
+      parameters:
+        src:
+          type: asset
+          value:
+            - _id: 83ac5dfd-712c-48cd-b2fd-c3d9ee2c7b3f
+              type: image
+              fields:
+                url:
+                  type: text
+                  value: ${#jptr:/shopifyProduct/node/images/edges/0/node/url}
+              _source: custom-url
+    ae799789-92fd-4474-a2df-89aa35247e44|7352138e-fbef-4ede-86d4-6452a3a9c22d:
+      parameters:
+        text:
+          type: text
+          value: ${#jptr:/shopifyProduct/node/title}
+    ae799789-92fd-4474-a2df-89aa35247e44|9badba9c-5b17-4fbc-8667-8ababe4da94e:
+      parameters:
+        link:
+          type: link
+          value:
+            path: >-
+              /products/${#jptr:/Shopify requested products
+              Content/data/products/edges/0/node/handle}
+            type: projectMapNode
+            nodeId: e9301df5-d530-49e0-b9f8-5a523c262446
+            projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+            dynamicInputValues:
+              handle: ${#jptr:/shopifyProduct/node/handle}
+    ae799789-92fd-4474-a2df-89aa35247e44|d38d5da8-57c7-4068-bc5b-e453584758b7:
+      parameters:
+        text:
+          type: text
+          value: Snowboard
+created: '2024-08-30T13:30:09.516785+00:00'
+modified: '2024-09-02T14:33:31.302948+00:00'
+pattern: false

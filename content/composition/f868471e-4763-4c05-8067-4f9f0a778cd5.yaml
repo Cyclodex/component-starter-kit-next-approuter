@@ -1,0 +1,14 @@
+composition:
+  _name: Team Member composition
+  _id: f868471e-4763-4c05-8067-4f9f0a778cd5
+  type: teamMember
+  parameters:
+    name:
+      type: text
+      value: Soulcode member name
+    description:
+      type: text
+      value: Developer
+created: '2024-08-30T08:43:07.196807+00:00'
+modified: '2024-08-30T11:35:30.107807+00:00'
+pattern: false

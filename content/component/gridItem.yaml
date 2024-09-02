@@ -163,10 +163,11 @@ slots:
       - box
       - navigationSection
       - text
+      - iconLink
     allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 titleParameter: title
 canBeComposition: false
 created: '2024-08-29T15:37:24.410453+00:00'
-updated: '2024-08-30T08:22:11.198892+00:00'
+updated: '2024-08-30T16:16:56.376524+00:00'

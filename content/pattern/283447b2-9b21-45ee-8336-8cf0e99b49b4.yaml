@@ -34,74 +34,48 @@ composition:
                           type: box
                           slots:
                             content:
-                              - _id: b14d975e-ddd2-4ee4-99aa-7db3e9229408
+                              - _id: 5e5cd078-091b-4527-93cd-28cb64207f9a
                                 type: image
                                 parameters:
                                   alt:
                                     type: text
-                                    value: Image Left
+                                    value: Image left
                                   src:
                                     type: asset
                                     value:
-                                      - _id: 5519727f-3de1-41d1-b97d-1d3377c96e84
+                                      - _id: 6f007d3b-881a-47d0-a05f-24f0e84e1bcd
                                         type: image
                                         fields:
-                                          id:
-                                            type: text
-                                            value: e3963aca-5918-41b5-9ab7-db6785f7bbe3
                                           url:
-                                            value: >-
-                                              https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/l33C0rT1QlehX67eRh2NBA-hero_rectangle.png
                                             type: text
-                                          file:
-                                            type: file
-                                            value: 189b86bb-f7d0-44e0-9750-7aac69d51ea9
-                                          size:
-                                            value: 76327
-                                            type: number
+                                            value: >-
+                                              ${#jptr:/Shopify requested products
+                                              Content/data/products/edges/0/node/images/edges/0/node/url}
                                           title:
                                             type: text
-                                            value: hero_rectangle.png
-                                          width:
-                                            value: 510
-                                            type: number
-                                          height:
-                                            value: 496
-                                            type: number
-                                          mediaType:
-                                            value: image/png
+                                            value: >-
+                                              ${#jptr:/Shopify requested products
+                                              Content/data/products/edges/0/node/title}
+                                          description:
                                             type: text
-                                        _source: uniform-assets
+                                            value: >-
+                                              ${#jptr:/Shopify requested products
+                                              Content/data/products/edges/0/node/title}
+                                        _source: custom-url
                                   objectFit:
                                     type: select
-                                    value: cover
-                                  borderWidth:
-                                    type: tp-slider-parameter
-                                    value: 0px
+                                    value: contain
                                   borderRadius:
                                     type: tp-slider-parameter
-                                    value: large
-                                  overlayColor:
-                                    type: tp-color-style-parameter
-                                    value: secondary
-                                  overlayOpacity:
-                                    type: tp-slider-parameter
-                                    value: 0%
+                                    value: none
                                 _overridability:
                                   parameters:
-                                    alt: 'yes'
                                     src: 'yes'
-                                    fill: 'yes'
-                                    width: 'yes'
-                                    height: 'yes'
-                                    quality: 'yes'
-                                    priority: 'yes'
-                                    objectFit: 'yes'
-                                    borderColor: 'yes'
-                                    borderWidth: 'yes'
-                                    borderRadius: 'yes'
-                                    overlayColor: 'yes'
-                                    overlayOpacity: 'yes'
+                                  hideLockedParameters: true
+                          parameters:
+                            display:
+                              type: tp-segmented-control-parameter
+                              value: block
                           _overridability:
                             parameters:
                               style: 'yes'
@@ -170,7 +144,9 @@ composition:
                                     value: ''
                                   text:
                                     type: text
-                                    value: Image Left Hero variant
+                                    value: >-
+                                      ${#jptr:/Shopify requested products
+                                      Content/data/products/edges/0/node/title}
                                   color:
                                     type: tp-color-palette-parameter
                                     value: secondary-content
@@ -271,21 +247,40 @@ composition:
                                                       link: 'yes'
                                                       style: 'yes'
                                                       animationType: 'yes'
-                                                - _id: 61df4ae3-fcfa-45c8-b475-c59f8a52563a
+                                                - _id: 9badba9c-5b17-4fbc-8667-8ababe4da94e
                                                   type: button
                                                   parameters:
                                                     copy:
                                                       type: text
-                                                      value: Secondary CTA
+                                                      value: See Details
+                                                    link:
+                                                      type: link
+                                                      value:
+                                                        path: >-
+                                                          /products/${#jptr:/Shopify requested
+                                                          products
+                                                          Content/data/products/edges/0/node/handle}
+                                                        type: projectMapNode
+                                                        nodeId: e9301df5-d530-49e0-b9f8-5a523c262446
+                                                        projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                                                        dynamicInputValues:
+                                                          handle: >-
+                                                            ${#jptr:/Shopify requested products
+                                                            Content/data/products/edges/0/node/handle}
                                                     style:
                                                       type: tp-button-style-parameter
                                                       value: accent
+                                                    animationType:
+                                                      type: select
+                                                      value: fadeIn
                                                   _overridability:
                                                     parameters:
+                                                      $viz: 'yes'
                                                       copy: 'yes'
                                                       link: 'yes'
                                                       style: 'yes'
                                                       animationType: 'yes'
+                                                    hideLockedParameters: true
                                             parameters:
                                               gapX:
                                                 type: tp-slider-parameter
@@ -298,7 +293,7 @@ composition:
                                                 value: Button Group
                                               columnsCount:
                                                 type: tp-slider-parameter
-                                                value: '2'
+                                                value: '1'
                                             _overridability:
                                               parameters:
                                                 gapX: 'yes'
@@ -458,6 +453,12 @@ composition:
             paddingBottom: 'yes'
             backgroundType: 'yes'
             containerVariant: 'yes'
+  _dataResources:
+    Shopify requested products Content:
+      type: shopifyRequestedProducts
+      variables: {}
+      isPatternParameter: true
+      ignorePatternParameterDefault: false
   _overridability:
     variants: true
     parameters:
@@ -468,8 +469,8 @@ composition:
       marginBottom: 'yes'
       paddingBottom: 'yes'
       backgroundColor: 'yes'
-created: '2024-04-15T10:51:36.752253+00:00'
-modified: '2024-04-15T10:51:36.752253+00:00'
+created: '2024-08-29T15:37:28.560084+00:00'
+modified: '2024-09-02T14:32:06.172471+00:00'
 pattern: true
 previewImageUrl: >-
   https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/UniformTheme/Hero_image_left_preview_image.jpg

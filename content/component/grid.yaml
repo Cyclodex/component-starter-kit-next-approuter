@@ -190,10 +190,12 @@ slots:
       - feature
       - box
       - button
+      - navigationLink
+      - container
     allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 titleParameter: title
 canBeComposition: false
 created: '2024-08-29T15:37:24.43685+00:00'
-updated: '2024-08-30T08:22:10.597433+00:00'
+updated: '2024-09-02T11:16:44.71007+00:00'
