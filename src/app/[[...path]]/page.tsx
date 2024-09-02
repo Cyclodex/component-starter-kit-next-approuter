@@ -9,7 +9,7 @@ import { componentResolver } from '@/canvas';
 // export { generateStaticParams } from '@uniformdev/canvas-next-rsc';
 
 // Optionally, when using SSR, you can enable edge runtime to render from the CDN nodes instead of lambda (check your CDN docs if this is supported)
-// export const runtime = 'edge';
+export const runtime = 'edge';
 
 const isRouteWithoutErrors = (route: ResolvedRouteGetResponse): route is RouteGetResponseEdgehancedComposition =>
   'compositionApiResponse' in route &&
