@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
 $schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
 id: product
-name: Product
+name: Product Component
 icon: bulb
 parameters:
   - id: shopifyProduct
@@ -25,4 +25,4 @@ slots:
     patternsInAllowedComponents: false
 canBeComposition: true
 created: '2024-08-30T12:03:30.538425+00:00'
-updated: '2024-09-02T13:18:49.307979+00:00'
+updated: '2024-09-02T20:26:59.830335+00:00'

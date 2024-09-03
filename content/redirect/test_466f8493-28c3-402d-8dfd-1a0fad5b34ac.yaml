@@ -1,0 +1,12 @@
+id: 466f8493-28c3-402d-8dfd-1a0fad5b34ac
+sourceUrl: /test
+sourceRetainQuerystring: true
+targetUrl: /about
+targetStatusCode: 301
+targetProjectMapNodeId: 1ee4d684-cbde-4b77-9883-723f740d3936
+projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+sourceMustMatchDomain: false
+targetPreserveIncomingProtocol: true
+targetPreserveIncomingDomain: true
+targetMergeQuerystring: true
+labelAsSystem: false

@@ -1,0 +1,32 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: input
+name: Input
+icon: rename
+parameters:
+  - id: id
+    name: ID
+    type: text
+    typeConfig: null
+  - id: label
+    name: Label
+    type: text
+    typeConfig:
+      required: false
+    localizable: true
+  - id: type
+    name: Type
+    type: text
+    typeConfig: null
+  - id: placeholder
+    name: Placeholder
+    type: text
+    typeConfig: null
+    localizable: true
+categoryId: c7c7c5c5-2b29-4f77-84b1-6730995a3ed6
+useTeamPermissions: true
+slots: []
+titleParameter: label
+canBeComposition: true
+created: '2024-09-03T06:28:01.877259+00:00'
+updated: '2024-09-03T06:28:01.877259+00:00'

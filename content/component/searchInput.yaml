@@ -1,0 +1,42 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: searchInput
+name: Search input
+icon: search
+parameters:
+  - id: id
+    name: ID
+    type: text
+    typeConfig: null
+  - id: label
+    name: Label
+    type: text
+    typeConfig:
+      required: false
+    localizable: true
+  - id: type
+    name: Type
+    type: text
+    typeConfig: null
+  - id: placeholder
+    name: Placeholder
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: value
+    name: Value
+    type: text
+    typeConfig: null
+categoryId: c7c7c5c5-2b29-4f77-84b1-6730995a3ed6
+useTeamPermissions: true
+slots:
+  - id: results
+    name: Results
+    allowedComponents: []
+    allowAllComponents: true
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: label
+canBeComposition: true
+created: '2024-09-03T07:09:40.835986+00:00'
+updated: '2024-09-03T08:23:33.424659+00:00'

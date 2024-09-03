@@ -1,0 +1,11 @@
+id: c72133d9-0605-47fb-8fba-434dfd4a1b0c
+sourceUrl: /pirate
+sourceRetainQuerystring: true
+targetUrl: '?pirate=1'
+targetStatusCode: 301
+projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+sourceMustMatchDomain: false
+targetPreserveIncomingProtocol: true
+targetPreserveIncomingDomain: true
+targetMergeQuerystring: true
+labelAsSystem: false

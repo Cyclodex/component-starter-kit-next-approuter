@@ -24,35 +24,15 @@ composition:
           image:
             type: asset
             value:
-              - _id: 749a0108-de12-493f-a28d-f9a77e854d30
+              - _id: 8542501a-2625-4d9f-919f-aae6ad7fd3fb
                 type: image
                 fields:
-                  id:
-                    type: text
-                    value: 3c1767ca-1851-4f4f-b8dc-4269d5ea6328
                   url:
+                    type: text
                     value: >-
-                      https://img.uniform.global/p/sfeK6SEaQQiym24NCKlHZg/tSRyyYM1QHCzN-lbSkdwBw-rectangle.webp
-                    type: text
-                  file:
-                    type: file
-                    value: 417f72e5-d0bc-47c8-8633-eb537728e2ec
-                  size:
-                    value: 49092
-                    type: number
-                  title:
-                    type: text
-                    value: rectangle.webp
-                  width:
-                    value: 1600
-                    type: number
-                  height:
-                    value: 689
-                    type: number
-                  mediaType:
-                    value: image/webp
-                    type: text
-                _source: uniform-assets
+                      ${#jptr:/Featured product image
+                      Content/fields/featuredProductImage/fields/file/url}
+                _source: custom-url
           title:
             type: text
             value: Soulcode
@@ -102,6 +82,15 @@ composition:
                 description:
                   type: text
                   value: Developer
+            - _id: a2ee5b01-921e-4c95-bdeb-bf4d0cb74f38
+              type: teamMember
+              parameters:
+                name:
+                  type: text
+                  value: Ernst Joss
+                description:
+                  type: text
+                  value: Developer
             - _id: 979e77b4-aa79-465d-8d3c-292514dacf54
               type: teamMember
               parameters:
@@ -130,6 +119,12 @@ composition:
           displayRootNode:
             type: checkbox
             value: true
+  _dataResources:
+    Featured product image Content:
+      type: featuredProductImage
+      variables:
+        locale: ''
+        entryIds: 2BCXcl4dMj53l6NEepS5GS
 created: '2024-08-30T08:33:46.318077+00:00'
-modified: '2024-08-30T11:44:12.544764+00:00'
+modified: '2024-09-02T20:06:09.969643+00:00'
 pattern: false

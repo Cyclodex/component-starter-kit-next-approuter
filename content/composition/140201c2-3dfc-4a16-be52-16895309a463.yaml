@@ -1,0 +1,133 @@
+composition:
+  _name: Search Page
+  _id: 140201c2-3dfc-4a16-be52-16895309a463
+  _slug: search
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: Search page
+  slots:
+    pageFooter:
+      - _id: 7518edfb-418c-4386-bd4f-7f9423774be0
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: 5b2b644c-8cec-4078-a590-76f670f4adfc
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: d3d685d2-5dd2-441e-8d75-c0d2e0f7dbe5
+        type: searchInput
+        _pattern: cd88c499-5b01-4346-945c-07a9ccd0a590
+        _dataResources:
+          Shopify request search products Content:
+            type: shopifyRequestSearchProducts
+            variables:
+              Search: ${search}
+      - _id: 1156cc69-2fe3-4287-ab9c-464ef287044a
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+  _dataResources:
+    Shopify request search products Content:
+      type: shopifyRequestSearchProducts
+      variables:
+        Search: ${search}
+  _overrides:
+    d3d685d2-5dd2-441e-8d75-c0d2e0f7dbe5:
+      parameters:
+        value:
+          type: text
+          value: ${search}
+    d3d685d2-5dd2-441e-8d75-c0d2e0f7dbe5|2a9d9004-2bed-492f-9ab4-39eb1741d64b:
+      slots:
+        $slotSectionItems:
+          - _id: e346b7a0-3466-4c3c-b440-786880774827
+            type: advancedContainer
+            variant: fluidContent
+            _pattern: 283447b2-9b21-45ee-8336-8cf0e99b49b4
+            _dataResources: {}
+            _overridability:
+              variants: true
+              parameters:
+                style: 'yes'
+                title: 'yes'
+                marginTop: 'yes'
+                paddingTop: 'yes'
+                marginBottom: 'yes'
+                paddingBottom: 'yes'
+                backgroundColor: 'yes'
+    e346b7a0-3466-4c3c-b440-786880774827|251febba-88ca-43b3-a95a-7fe8f222714a:
+      parameters:
+        copy:
+          type: text
+          value: >-
+            ${#jptr:/Shopify request search products Content edges Loop
+            Item/node/variants/edges/0/node/price/amount} ${#jptr:/Shopify
+            request search products Content edges Loop
+            Item/node/variants/edges/0/node/price/currencyCode}
+    e346b7a0-3466-4c3c-b440-786880774827|42e2ea1d-ea67-40d0-8356-175f71d6075f:
+      parameters:
+        text:
+          type: text
+          value: >-
+            ${#jptr:/Shopify request search products Content edges Loop
+            Item/node/description}
+    e346b7a0-3466-4c3c-b440-786880774827|5e5cd078-091b-4527-93cd-28cb64207f9a:
+      parameters:
+        src:
+          type: asset
+          value:
+            - _id: 2e74fb8a-6691-45d1-a9ce-c08e990d4c84
+              type: image
+              fields:
+                url:
+                  type: text
+                  value: >-
+                    ${#jptr:/Shopify request search products Content edges Loop
+                    Item/node/images/edges/0/node/url}
+                title:
+                  type: text
+                  value: >-
+                    ${#jptr:/Shopify request search products Content edges Loop
+                    Item/node/title}
+                description:
+                  type: text
+                  value: >-
+                    ${#jptr:/Shopify request search products Content edges Loop
+                    Item/node/title}
+              _source: custom-url
+    e346b7a0-3466-4c3c-b440-786880774827|7352138e-fbef-4ede-86d4-6452a3a9c22d:
+      parameters:
+        text:
+          type: text
+          value: >-
+            ${#jptr:/Shopify request search products Content edges Loop
+            Item/node/title}
+    e346b7a0-3466-4c3c-b440-786880774827|9badba9c-5b17-4fbc-8667-8ababe4da94e:
+      parameters:
+        link:
+          type: link
+          value:
+            path: >-
+              /products/${#jptr:/Shopify requested products
+              Content/data/products/edges/0/node/handle}
+            type: projectMapNode
+            nodeId: e9301df5-d530-49e0-b9f8-5a523c262446
+            projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+            dynamicInputValues:
+              handle: >-
+                ${#jptr:/Shopify request search products Content edges Loop
+                Item/node/handle}
+created: '2024-09-03T06:17:57.233058+00:00'
+modified: '2024-09-03T08:43:23.048045+00:00'
+pattern: false

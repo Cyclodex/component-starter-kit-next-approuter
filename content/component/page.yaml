@@ -178,6 +178,7 @@ slots:
       - advancedContainer
       - team
       - product
+      - searchInput
     allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
@@ -278,4 +279,4 @@ defaults:
 titleParameter: pageTitle
 canBeComposition: true
 created: '2024-08-29T15:37:25.516617+00:00'
-updated: '2024-08-30T13:32:12.774597+00:00'
+updated: '2024-09-03T07:52:47.633795+00:00'

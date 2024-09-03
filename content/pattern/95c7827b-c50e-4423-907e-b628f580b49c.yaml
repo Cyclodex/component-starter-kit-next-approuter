@@ -1,0 +1,22 @@
+composition:
+  _name: Input pattern
+  _id: 95c7827b-c50e-4423-907e-b628f580b49c
+  type: input
+  parameters:
+    id:
+      type: text
+      value: Search
+    type:
+      type: text
+      value: search
+    label:
+      type: text
+      value: Search
+    placeholder:
+      type: text
+      value: Search for products
+  _overridability:
+    hideLockedParameters: true
+created: '2024-09-03T06:28:52.618807+00:00'
+modified: '2024-09-03T07:08:54.602206+00:00'
+pattern: true

@@ -200,12 +200,14 @@ composition:
                   format: 0
                   version: 1
               direction: ltr
+              textStyle: ''
             - type: paragraph
               format: ''
               indent: 0
               version: 1
               children: []
               direction: ltr
+              textStyle: ''
           direction: ltr
     displayBuildTimestamp:
       type: checkbox
@@ -339,7 +341,7 @@ composition:
               path: https://github.com/uniformdev/uniform-component-starter-kit
               type: url
 created: '2024-08-29T15:37:28.845+00:00'
-modified: '2024-08-30T08:22:19.409028+00:00'
+modified: '2024-09-02T20:06:38.813113+00:00'
 pattern: true
 previewImageUrl: >-
   https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/UniformTheme/Footer_preview_image

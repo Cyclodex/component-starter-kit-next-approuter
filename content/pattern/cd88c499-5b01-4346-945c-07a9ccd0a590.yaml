@@ -1,0 +1,56 @@
+composition:
+  _name: Search input pattern
+  _id: cd88c499-5b01-4346-945c-07a9ccd0a590
+  type: searchInput
+  parameters:
+    id:
+      type: text
+      value: Search
+    type:
+      type: text
+      value: search
+    label:
+      type: text
+      value: Search
+    placeholder:
+      type: text
+      value: Search for products
+  slots:
+    results:
+      - _id: 43b0fe5c-2107-48e4-b154-70e9ba0ea7a2
+        type: $loop
+        slots:
+          body:
+            - _id: 2a9d9004-2bed-492f-9ab4-39eb1741d64b
+              type: $slotSection
+              parameters:
+                name:
+                  type: text
+                  value: results
+              _overridability:
+                hideLockedParameters: true
+        _dataResources:
+          Shopify request search products Content edges Loop Item:
+            type: sys-reserved-loop
+            variables:
+              limit: '5'
+              connectedData: >-
+                #jptr:/Shopify request search products
+                Content/data/search/edges:fa=c
+        _overridability:
+          hideLockedParameters: true
+  _dataResources:
+    Shopify request search products Content:
+      type: shopifyRequestSearchProducts
+      variables: {}
+      isPatternParameter: true
+      ignorePatternParameterDefault: true
+  _overridability:
+    parameters:
+      label: 'yes'
+      value: 'yes'
+      placeholder: 'yes'
+    hideLockedParameters: true
+created: '2024-09-03T07:10:01.459462+00:00'
+modified: '2024-09-03T08:29:59.043116+00:00'
+pattern: true

@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: ba4fe9cc-d03c-4b43-9a07-b3839aac3e85
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: soulcode-logo.png
+    file:
+      type: file
+      value: 648267a5-e60e-4d2e-8bde-ebf50c317f3f
+    mediaType:
+      value: image/png
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/sfeK6SEaQQiym24NCKlHZg/kBtCLgNNTxu_YzI-c_vjsA-soulcode-logo.png
+      type: text
+    size:
+      value: 7161
+      type: number
+    width:
+      value: 128
+      type: number
+    height:
+      value: 128
+      type: number
+    custom: {}
+created: '2024-09-02T20:01:10.387846+00:00'
+modified: '2024-09-02T20:01:10.387846+00:00'

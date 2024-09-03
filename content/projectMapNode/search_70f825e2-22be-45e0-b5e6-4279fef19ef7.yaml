@@ -1,0 +1,13 @@
+id: 70f825e2-22be-45e0-b5e6-4279fef19ef7
+name: Search
+order: 500
+path: /search
+type: composition
+pathSegment: search
+data:
+  queryStrings:
+    - name: search
+      value: ''
+      helpText: ''
+compositionId: 140201c2-3dfc-4a16-be52-16895309a463
+projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431

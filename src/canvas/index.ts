@@ -41,11 +41,11 @@ import { testimonialMappings } from './Testimonial';
 import { videoMappings } from './Video';
 import { enrichmentSetterMappings } from './EnrichmentSetter';
 import { pageMapping } from './Page/Page';
-import { teamMappings } from './Team';
-import { teamMemberMappings } from './TeamMember';
-import { productMappings } from './Product';
+import { teamMappings } from './_soulcode/Team';
+import { teamMemberMappings } from './_soulcode/TeamMember';
+import { productMappings } from './_soulcode/Product';
 import { inputMappings } from './_atoms/Input';
-import { searchInputMappings } from './SearchInput';
+import { searchInputMappings } from './_soulcode/SearchInput';
 
 export const baseComponentMappings = {
   ...accordionItemMappings,
