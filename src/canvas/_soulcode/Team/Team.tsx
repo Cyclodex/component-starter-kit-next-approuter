@@ -11,12 +11,7 @@ export function Team({ context, component, slots }: TeamProps) {
         <UniformText context={context} component={component} parameterId="subtitle" as="p" className="italic" />
       </div>
       <div className="flex justify-around">
-        <UniformSlot
-          context={context}
-          data={component}
-          // this must correspond to the `public id` of the slot created earlier
-          slot={slots.content}
-        />
+        <UniformSlot context={context} data={component} slot={slots.content} />
       </div>
     </div>
   );
