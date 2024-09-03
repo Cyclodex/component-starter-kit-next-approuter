@@ -231,8 +231,12 @@ composition:
                       $pzCrit:
                         type: $pzCrit
                         value:
+                          op: '|'
                           crit:
                             - l: likesPirates
+                              r: 0
+                              op: '>'
+                            - l: pirates
                               r: 0
                               op: '>'
                           name: 'Text: 🏴‍☠️Howdy 🏴‍☠️'
@@ -330,5 +334,5 @@ composition:
             type: tp-segmented-control-parameter
             value: center
 created: '2024-08-29T15:38:14.366088+00:00'
-modified: '2024-09-02T12:44:19.850739+00:00'
+modified: '2024-09-03T09:27:30.577797+00:00'
 pattern: false
