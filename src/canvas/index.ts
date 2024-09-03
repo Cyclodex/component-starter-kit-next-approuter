@@ -44,6 +44,8 @@ import { pageMapping } from './Page/Page';
 import { teamMappings } from './Team';
 import { teamMemberMappings } from './TeamMember';
 import { productMappings } from './Product';
+import { inputMappings } from './_atoms/Input';
+import { searchInputMappings } from './SearchInput';
 
 export const baseComponentMappings = {
   ...accordionItemMappings,
@@ -92,6 +94,8 @@ export const baseComponentMappings = {
   ...teamMappings,
   ...teamMemberMappings,
   ...productMappings,
+  ...inputMappings,
+  ...searchInputMappings,
 };
 
 import { createComponentResolver } from '@/utilities/canvas/componentResolver';

@@ -1,0 +1,4 @@
+'use client';
+
+export * from '../../../components/Input';
+export { default } from '../../../components/Input';
