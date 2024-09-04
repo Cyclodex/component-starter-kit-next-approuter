@@ -8,19 +8,16 @@ parameters:
   - id: logo
     name: Logo
     type: asset
-    helpText: ''
     typeConfig:
       max: 1
       min: 0
   - id: displayBuildTimestamp
     name: Display Build Timestamp
     type: checkbox
-    helpText: ''
     typeConfig: null
   - id: copyright
     name: Copyright
     type: text
-    helpText: ''
     typeConfig:
       multiline: true
       linesCount: '10'
@@ -28,7 +25,6 @@ parameters:
   - id: footerText
     name: Footer Text
     type: richText
-    helpText: ''
     typeConfig:
       elements:
         builtIn:
@@ -58,5 +54,5 @@ slots:
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 canBeComposition: false
-created: '2024-04-15T10:51:34.075424+00:00'
-updated: '2024-04-15T10:51:34.075424+00:00'
+created: '2024-09-04T09:51:26.926222+00:00'
+updated: '2024-09-04T09:51:26.926222+00:00'

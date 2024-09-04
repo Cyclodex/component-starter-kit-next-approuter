@@ -8,7 +8,7 @@ asset:
       value: icon_featured_callout_w.svg
     file:
       type: file
-      value: 118fd9f4-908b-4f66-ab8c-5070d5802550
+      value: e7e29d20-d2db-4e2b-a2c9-087bbc3b1272
     mediaType:
       value: image/svg+xml
       type: text
@@ -17,7 +17,7 @@ asset:
         https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/V2lxtILqTmq1iCe6eRNCdw-icon_featured_callout_w.svg
       type: text
     size:
-      value: 6076
+      value: 6203
       type: number
     width:
       value: 220
@@ -26,5 +26,5 @@ asset:
       value: 220
       type: number
     custom: {}
-created: '2024-04-15T10:51:13.013812+00:00'
-modified: '2024-04-15T10:51:13.013812+00:00'
+created: '2024-09-04T09:47:08.314807+00:00'
+modified: '2024-09-04T09:50:39.73739+00:00'

@@ -106,6 +106,64 @@ composition:
         type: header
         _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
     pageContent:
+      - _id: 102223e9-c9a6-4f74-9e60-d09d72ccd54e
+        type: hero
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: aca9d89f-eab4-4e9b-b40d-69cd03e22ea9
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: f6e7a90a-7050-42c2-8f73-d868c6fb5feb
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/LIbK-wngTKCSnvQqYO0Taw/HlKzCEkpQqW64qVLtaDMVg-cup_delicious_coffee.jpg
+                    type: text
+                  file:
+                    type: file
+                    value: f85e1248-3551-4040-aa6d-650b2054654c
+                  size:
+                    value: 2396183
+                    type: number
+                  title:
+                    type: text
+                    value: cup_delicious_coffee.jpg
+                  width:
+                    value: 4608
+                    type: number
+                  height:
+                    value: 3072
+                    type: number
+                  mediaType:
+                    value: image/jpeg
+                    type: text
+                _source: uniform-assets
+          title:
+            type: text
+            locales:
+              de-de: Willkommen
+              en-us: Welcome
+          objectFit:
+            type: select
+            value: cover
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h1
+          description:
+            type: text
+            locales:
+              de-de: DE Version vom inhalt
+              en-us: EN Version of content
+          eyebrowText:
+            type: text
+            locales:
+              en-us: i18n
+          overlayOpacity:
+            type: tp-slider-parameter
+            value: 0%
       - _id: 1f352a25-7acb-4893-a11c-f06bd45f27ab
         type: hero
         variant: backgroundImage
@@ -144,7 +202,7 @@ composition:
                 _source: uniform-assets
           title:
             type: text
-            value: Uniform’s Component Starter Kit
+            value: CSK
           objectFit:
             type: select
             value: cover
@@ -186,7 +244,6 @@ composition:
             value: primary
       - _id: 7e072bd7-bbe7-4f97-8707-635f74d6ea8e
         type: callToAction
-        variant: ''
         parameters:
           title:
             type: text
@@ -228,7 +285,7 @@ composition:
                           type: file
                           value: c089d446-e3b2-4ca5-b556-88fed77a65e5
                         size:
-                          value: 1402
+                          value: 1411
                           type: number
                         title:
                           type: text
@@ -271,7 +328,7 @@ composition:
                           type: file
                           value: 7e74c65b-c100-4d3e-91ad-5e605bf70b79
                         size:
-                          value: 729
+                          value: 736
                           type: number
                         title:
                           type: text
@@ -314,7 +371,7 @@ composition:
                           type: file
                           value: 192d5d29-3c89-43fe-8357-0cead3c7b921
                         size:
-                          value: 1669
+                          value: 1677
                           type: number
                         title:
                           type: text
@@ -411,7 +468,7 @@ composition:
                           type: file
                           value: 192d5d29-3c89-43fe-8357-0cead3c7b921
                         size:
-                          value: 1669
+                          value: 1677
                           type: number
                         title:
                           type: text
@@ -455,7 +512,7 @@ composition:
                           type: file
                           value: c089d446-e3b2-4ca5-b556-88fed77a65e5
                         size:
-                          value: 1402
+                          value: 1411
                           type: number
                         title:
                           type: text
@@ -498,7 +555,7 @@ composition:
                           type: file
                           value: 7e74c65b-c100-4d3e-91ad-5e605bf70b79
                         size:
-                          value: 729
+                          value: 736
                           type: number
                         title:
                           type: text
@@ -982,6 +1039,9 @@ composition:
           secondaryButtonStyle:
             type: tp-button-style-parameter
             value: link
-created: '2024-04-15T10:52:18.465479+00:00'
-modified: '2024-04-15T10:52:18.465479+00:00'
+  _locales:
+    - en-us
+    - de-de
+created: '2024-09-04T09:52:13.849968+00:00'
+modified: '2024-09-04T10:08:28.371243+00:00'
 pattern: false

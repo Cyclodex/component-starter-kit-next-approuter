@@ -8,7 +8,7 @@ asset:
       value: content-inline-svgrepo-com.svg
     file:
       type: file
-      value: ba77c175-487f-4b32-91f7-893ea38757c0
+      value: f5dce220-04ed-4ace-99b3-b307b07c6ef6
     mediaType:
       value: image/svg+xml
       type: text
@@ -17,7 +17,7 @@ asset:
         https://img.uniform.global/p/naAA5qE-RfCiIsczuIiWIg/gjIDq86ESgSAG9WGI8smkA-content-inline-svgrepo-com.svg
       type: text
     size:
-      value: 377
+      value: 378
       type: number
     width:
       value: 800
@@ -26,5 +26,5 @@ asset:
       value: 800
       type: number
     custom: {}
-created: '2024-04-15T10:51:13.106309+00:00'
-modified: '2024-04-15T10:51:13.106309+00:00'
+created: '2024-09-04T09:47:08.010195+00:00'
+modified: '2024-09-04T09:50:42.948845+00:00'
